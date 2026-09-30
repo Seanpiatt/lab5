@@ -28,8 +28,10 @@ void handleInput(sf::Window& window, bool& shouldQuit) {
         } else if (const auto* mouse = event->getIf<sf::Event::MouseButtonPressed>()) {
             // TODO: (Part 3) On left-click, select the closest control point
             // using mouse->position and start dragging it.
+            sf::Mouse::Button::Left:
         } else if (const auto* mouse = event->getIf<sf::Event::MouseButtonReleased>()) {
             // TODO: (Part 3) On left-button release, stop dragging.
+            sf::Mouse::Button::Left:
         } else if (const auto* mouse = event->getIf<sf::Event::MouseMoved>()) {
             // TODO: (Part 3) Move the selected control point to mouse->position.
             // TODO: (Part 4) Maintain matching slopes at shared endpoints.
